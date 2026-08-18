@@ -14,6 +14,26 @@
             overflow: hidden;
         }
 
+
+                /* 游戏链接样式 */
+        .game-link {
+            display: inline-block;
+            font-size: 1.5rem;
+            color: #4CAF50;
+            text-decoration: none;
+            padding: 10px 25px;
+            border: 2px solid #4CAF50;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            margin: 15px 0;
+        }
+
+        .game-link:hover {
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+
         /* 使用 Flexbox 布局，轻松实现水平和垂直居中 */
         .center-container {
             display: flex;
@@ -28,7 +48,7 @@
 
         /* 图片样式 */
         .top-image {
-            width: 320px; /* 你可以根据需要调整图片宽度 */
+            width: 150px; /* 你可以根据需要调整图片宽度 */
             height: auto; /* 保持图片比例 */
             margin-bottom: 20px; /* 图片和主文字之间留出距离 */
             border-radius: 8px; /* 让图片边缘变圆润 */
@@ -53,9 +73,16 @@
     <div class="center-container">
         <!-- 1. 图片在最上方 (记得把 image.png 换成你真实的图片文件名) -->
         <img src="kei.jpg" alt="网站图片" class="top-image">
+
+        
         
         <!-- 2. 主文字在中间 -->
         <h1>天童kei大人万岁</h1>
+
+         <!-- 新增：测试游戏链接 -->
+        <p>
+            <a href="/gametest/game.html" class="game-link">🎮 测试游戏</a>
+        </p>
         
         <!-- 3. 提示小字在最下方 -->
         <p class="hint-text">ctrl+F5强制刷新</p>
