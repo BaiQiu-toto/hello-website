@@ -17,25 +17,48 @@
         /* 使用 Flexbox 布局，轻松实现水平和垂直居中 */
         .center-container {
             display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center;     /* 垂直居中 */
+            flex-direction: column; /* 让子元素（图片、文字、提示）垂直排列 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center;     /* 水平居中 */
             width: 100%;
             height: 100%;
-            background-color: #f9f9f9; /* 设置一个柔和的背景色 */
+            background-color: #f9f9f9; /* 柔和的背景色 */
             font-family: "Microsoft YaHei", Arial, sans-serif;
         }
 
-        /* 文字样式 */
+        /* 图片样式 */
+        .top-image {
+            width: 150px; /* 你可以根据需要调整图片宽度 */
+            height: auto; /* 保持图片比例 */
+            margin-bottom: 20px; /* 图片和主文字之间留出距离 */
+            border-radius: 8px; /* 让图片边缘变圆润 */
+        }
+
+        /* 主文字样式 */
         h1 {
-            font-size: 4rem; /* 字体大小 */
-            color: #333;     /* 字体颜色 */
+            font-size: 3rem; 
+            color: #333;     
             margin: 0;
+        }
+
+        /* 底部提示小字样式 */
+        .hint-text {
+            font-size: 0.9rem;       /* 较小的字号 */
+            color: #888;             /* 灰色字体 */
+            margin-top: 30px;        /* 与主文字拉开距离 */
         }
     </style>
 </head>
 <body>
     <div class="center-container">
+        <!-- 1. 图片在最上方 (记得把 image.png 换成你真实的图片文件名) -->
+        <img src="kei.jpg" alt="网站图片" class="top-image">
+        
+        <!-- 2. 主文字在中间 -->
         <h1>天童kei大人万岁</h1>
+        
+        <!-- 3. 提示小字在最下方 -->
+        <p class="hint-text">ctrl+F5强制刷新</p>
     </div>
 </body>
 </html>
