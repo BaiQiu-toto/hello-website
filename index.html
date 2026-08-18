@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的测试网站</title>
+    <style>
+        /* 让网页占满整个屏幕，并隐藏可能出现的滚动条 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* 使用 Flexbox 布局，轻松实现水平和垂直居中 */
+        .center-container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center;     /* 垂直居中 */
+            width: 100%;
+            height: 100%;
+            background-color: #f9f9f9; /* 设置一个柔和的背景色 */
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        /* 文字样式 */
+        h1 {
+            font-size: 4rem; /* 字体大小 */
+            color: #333;     /* 字体颜色 */
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <h1>你好</h1>
+    </div>
+</body>
+</html>
